@@ -15,7 +15,7 @@ This project investigates procedural mistake detection in complex human activiti
 
 Procedural understanding is a key component of intelligent systems designed to assist humans in real-world tasks. In domains such as cooking, effective assistance requires not only recognizing which action is being performed, but also detecting when a mistake occurs, such as skipping a step, performing an action in the wrong order, or committing a measurement or timing error.
 
-This project is based on the CaptainCook4D benchmark and focuses on the task of procedural mistake detection from egocentric video data. We analyze the problem under different evaluation protocols, including Step and Recordings splits, which test both intra-procedure consistency and generalization to unseen environments. The repository contains the full pipeline for feature extraction, model training, and evaluation, enabling reproducibility and further extensions.
+This project is based on the CaptainCook4D benchmark and focuses on the task of procedural mistake detection from egocentric video data. We analyze the problem under different evaluation protocols, including Step and Recordings splits, which test both intra-procedure consistency and generalization to unseen environments. The repository contains the full pipeline for feature extraction, model training, and evaluation, enabling reproducibility.
 
 ---
 
