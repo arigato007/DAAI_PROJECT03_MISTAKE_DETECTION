@@ -14,7 +14,7 @@ This project addresses the challenge of **Procedural Mistake Detection** in egoc
 ## Data & Checkpoints
 Due to GitHub storage limits, the pre-extracted features and trained model checkpoints are hosted externally.
 
-👉 **[CLICK HERE TO DOWNLOAD DATA & CHECKPOINTS (Google Drive)]([INSERISCI_QUI_IL_LINK_DEL_TUO_DRIVE](https://drive.google.com/drive/folders/1Ne50XFNHZEsQ3K0_cYI4JdBWqJm3_B7h?usp=drive_link))**
+**[CLICK HERE TO DOWNLOAD DATA & CHECKPOINTS (Google Drive)](https://drive.google.com/drive/folders/1Ne50XFNHZEsQ3K0_cYI4JdBWqJm3_B7h?usp=drive_link)**
 
 **Setup:**
 1. Download the zip folder from the link above.
