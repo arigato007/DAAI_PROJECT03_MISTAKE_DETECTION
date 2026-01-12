@@ -1,13 +1,4 @@
-## 🚀 Getting Started
-
-### 1. Prerequisites
-Clone the repository and install the dependencies:
-```bash
-git clone [https://github.com/YOUR_USERNAME/CaptainCook-Mistake-Detection.git](https://github.com/YOUR_USERNAME/CaptainCook-Mistake-Detection.git)
-cd CaptainCook-Mistake-Detection
-pip install -r requirements.txt
-
-# Procedural Mistake Detection on CaptainCook4D 👨‍🍳🚫
+# Procedural Mistake Detection on CaptainCook4D
 
 **Authors:** Arienzo Davide, Zito Simone, Bucaria Stefano  
 **Course:** [Inserire Nome del Corso], Politecnico di Torino  
@@ -39,21 +30,3 @@ We evaluated our models on two splits: **Step** (familiar environment) and **Rec
 | **Recordings** | Omnivore | **LSTM (Ours)** | **46.92%** | **58.87%** | **0.606** |
 
 > **Key Insight:** The LSTM variant proves to be more robust than Transformers in generalizing to unseen actors and kitchens, offering the best trade-off between Precision and Recall.
-
----
-
-## 📂 Project Structure
-
-```text
-Mistake_Detection_Project/
-├── configs/              # Configuration files (YAML)
-├── data/                 # Dataset splits and labels
-├── models/
-│   ├── mlp.py            # MLP Baseline
-│   ├── transformer.py    # Transformer Baseline
-│   └── lstm.py           # LSTM Implementation (Ours)
-├── utils/                # Helper functions (loading, metrics)
-├── train.py              # Main training script
-├── evaluate.py           # Inference and metric calculation
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
