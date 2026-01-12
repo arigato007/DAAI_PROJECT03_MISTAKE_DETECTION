@@ -2,7 +2,7 @@
 
 **Authors:** Arienzo Davide, Zito Simone, Bucaria Stefano  
 **Course:** Data Analysis and Artificial Intelligence, Politecnico di Torino  
-**Academic Year:** 2024/2025
+**Academic Year:** 2025/2026
 
 ---
 
