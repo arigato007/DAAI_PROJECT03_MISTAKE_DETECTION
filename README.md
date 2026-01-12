@@ -1,20 +1,20 @@
-# Procedural Mistake Detection on CaptainCook4D 👨‍🍳🚫
+# Procedural Mistake Detection on CaptainCook4D
 
 **Authors:** Arienzo Davide, Zito Simone, Bucaria Stefano  
-**Course:** [NOME_CORSO], Politecnico di Torino  
+**Course:** Data Analysis and Artificial Intelligence, Politecnico di Torino  
 **Academic Year:** 2024/2025
 
 ---
 
-## 📝 Abstract
+## Abstract
 This project addresses the challenge of **Procedural Mistake Detection** in egocentric videos using the **CaptainCook4D** benchmark. We evaluate standard baselines (SlowFast, Omnivore) and introduce a **Unidirectional LSTM** variant that achieves state-of-the-art performance on the challenging *Recordings* split. We also explore the **Perception Encoder** as a feature extractor to leverage vision-language alignment.
 
 ---
 
-## 📥 Data & Checkpoints
+## Data & Checkpoints
 Due to GitHub storage limits, the pre-extracted features and trained model checkpoints are hosted externally.
 
-👉 **[CLICK HERE TO DOWNLOAD DATA & CHECKPOINTS (Google Drive)](INSERISCI_QUI_IL_LINK_DEL_TUO_DRIVE)**
+👉 **[CLICK HERE TO DOWNLOAD DATA & CHECKPOINTS (Google Drive)]([INSERISCI_QUI_IL_LINK_DEL_TUO_DRIVE](https://drive.google.com/drive/folders/1Ne50XFNHZEsQ3K0_cYI4JdBWqJm3_B7h?usp=drive_link))**
 
 **Setup:**
 1. Download the zip folder from the link above.
