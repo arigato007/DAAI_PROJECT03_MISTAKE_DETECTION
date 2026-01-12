@@ -1,3 +1,12 @@
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Clone the repository and install the dependencies:
+```bash
+git clone [https://github.com/YOUR_USERNAME/CaptainCook-Mistake-Detection.git](https://github.com/YOUR_USERNAME/CaptainCook-Mistake-Detection.git)
+cd CaptainCook-Mistake-Detection
+pip install -r requirements.txt
+
 # Procedural Mistake Detection on CaptainCook4D 👨‍🍳🚫
 
 **Authors:** Arienzo Davide, Zito Simone, Bucaria Stefano  
