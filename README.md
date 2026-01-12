@@ -7,23 +7,15 @@
 ---
 
 ## Abstract
-This project addresses the challenge of **Procedural Mistake Detection** in egocentric videos using the **CaptainCook4D** benchmark. We evaluate standard baselines (SlowFast, Omnivore) and introduce a **LSTM** variant that achieves state-of-the-art performance on the challenging *Recordings* split. We also explore the **Perception Encoder** as a feature extractor to leverage vision-language alignment.
+This project investigates procedural mistake detection in complex human activities, with a focus on instructional cooking scenarios. The goal is to move beyond standard action recognition by identifying subtle semantic and temporal errors that occur during task execution. We evaluate multiple architectural variants and visual backbones, reproduce established baselines, and introduce temporal modeling strategies to improve robustness. In particular, we show that explicitly modeling sequential dependencies significantly enhances mistake detection performance, especially under challenging generalization settings.
 
 ---
 
 ## Overview & Motivation
 
-AI assistants in Augmented Reality (AR) and Robotics must do more than simply recognize actions; they must identify **when a procedure goes wrong**. 
+Procedural understanding is a key component of intelligent systems designed to assist humans in real-world tasks. In domains such as cooking, effective assistance requires not only recognizing which action is being performed, but also detecting when a mistake occurs, such as skipping a step, performing an action in the wrong order, or committing a measurement or timing error.
 
-While standard Action Recognition focuses on *what* is happening (e.g., "pouring water"), **Mistake Detection** requires understanding *how* it is happening and whether it violates the logical constraints of the recipe (e.g., "pouring water **too early**" or "**skipping** the mixing step").
-
-**Key Challenges:**
-* **Subtle Deviations:** Distinguishing between a correct action and a "Technique Error" often relies on fine-grained visual cues.
-* **Temporal Dependencies:** Many errors are context-dependent (e.g., a step is only wrong if the previous one wasn't completed).
-* **Domain Generalization:** Models often fail when tested in unseen kitchens with different lighting and actors (the *Recordings Split* problem).
-
-**Our Goal:**
-In this project, we move beyond simple frame-level classification. We benchmark state-of-the-art visual backbones (**Omnivore**, **SlowFast**) and demonstrate that a lightweight, causality-preserving **LSTM** aggregator generalizes better to unseen environments than complex Transformers for this specific task.
+This project is based on the CaptainCook4D benchmark and focuses on the task of procedural mistake detection from egocentric video data. We analyze the problem under different evaluation protocols, including Step and Recordings splits, which test both intra-procedure consistency and generalization to unseen environments. The repository contains the full pipeline for feature extraction, model training, and evaluation, enabling reproducibility and further extensions.
 
 ---
 
@@ -40,3 +32,14 @@ The folder structure on Google Drive **already matches** the project requirement
 * `captain_cook_4d_gopro_resized/` (Contains raw videos for Perception Encoder)
 * `features/` (Contains pre-extracted features for Omnivore & SlowFast)
 * `error_recognition/checkpoints/` (Contains the trained `.pth` models)
+
+---
+
+## Methodology Approach
+This project follows a progressive experimental pipeline for procedural mistake detection.
+
+First, we reproduce the official CaptainCook4D baselines by performing mistake detection using pre-extracted Omnivore and SlowFast features, combined with MLP and Transformer variants. Experiments are conducted under both Step and Recordings splits to evaluate performance and generalization.
+
+Second, we extend the baseline framework by introducing an LSTM-based model, explicitly designed to capture long-term temporal dependencies in procedural activities. The LSTM is trained on the same fixed Omnivore and SlowFast features and evaluated using the same protocols for fair comparison.
+
+Finally, we integrate a new feature extraction backbone based on a Perception Encoder. Features are extracted directly from raw videos and used to train all three variants (MLP, Transformer, and LSTM). Results are compared to analyze the impact of richer visual representations and temporal modeling on mistake detection performance.
