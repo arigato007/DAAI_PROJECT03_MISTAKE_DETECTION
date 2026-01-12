@@ -17,8 +17,13 @@ Due to GitHub storage limits, the pre-extracted features and trained model check
 **[CLICK HERE TO DOWNLOAD DATA & CHECKPOINTS (Google Drive)](https://drive.google.com/drive/folders/1Ne50XFNHZEsQ3K0_cYI4JdBWqJm3_B7h?usp=drive_link)**
 
 **Setup:**
-1. Download the zip folder from the link above.
-2. Extract it inside the project root so that you have a `data/` and `checkpoints/` folder.
+The folder structure on Google Drive **already matches** the project requirements.
+1. Download the content from the Drive link.
+2. Extract/Place the folders directly into the project root so that you have:
+
+* `captain_cook_4d_gopro_resized/` (Contains raw videos for Perception Encoder)
+* `features/` (Contains pre-extracted features for Omnivore & SlowFast)
+* `error_recognition/checkpoints/` (Contains the trained `.pth` models)
 
 ---
 
