@@ -30,7 +30,7 @@ The folder structure on Google Drive **already matches** the project requirement
 2. Extract/Place the folders directly into the project root so that you have:
 
 * `captain_cook_4d_gopro_resized/` (Contains raw videos for Perception Encoder)
-* `features/` (Contains pre-extracted features for Omnivore & SlowFast)
+* `features/` (Contains pre-extracted features for Omnivore, SlowFast & Perception Encoder)
 * `error_recognition/checkpoints/` (Contains the trained `.pth` models)
 
 ---
